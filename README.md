@@ -62,4 +62,4 @@ npm --prefix frontend test
 npm --prefix frontend run build
 ```
 
-上述后端命令使用不可达的本地模型地址，只验证核心代码，不会执行真实模型链路；运行后请新开终端启动服务，避免假凭据覆盖 `.env`。本次 Windows 环境中核心后端测试 121 项、前端测试 240 项通过；全量后端回归有 12 项失败，尚未验证真实模型链路。Harness 评测使用 `make eval-harness`，需要可用的模型凭据。
+上述后端命令使用不可达的本地模型地址，只验证核心代码，不会执行真实模型链路；运行后请新开终端启动服务，避免假凭据覆盖 `.env`。Harness 评测使用 `make eval-harness`，需要可用的模型凭据。
